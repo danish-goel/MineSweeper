@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <android.support.v7.widget.Toolbar
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+	    android:id="@+id/my_awesome_toolbar"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:minHeight="?attr/actionBarSize"
+	    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+	    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+	    android:background="#1E91D0" />
+        
+	    <TextView
+	        android:id="@+id/Header"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp"
+	        android:text="Name\t\tScore\t\tLevel" />
+	    
+	    <TextView
+	        android:id="@+id/Scores"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textSize="24sp"
+	        android:text="Empty" />
+
+</LinearLayout>

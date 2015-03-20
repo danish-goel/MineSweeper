@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    	<android.support.v7.widget.Toolbar
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+	    android:id="@+id/my_awesome_toolbar"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:minHeight="?attr/actionBarSize"
+	    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+	    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+	    android:background="#1E91D0" />
+    
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal">
+	
+			<TextView
+				android:id="@+id/Timer"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FFFFFF"
+				android:textSize="40sp"
+				android:text="60" />
+				
+			<ImageButton 
+			    android:id="@+id/Smiley"
+			    android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:layout_marginLeft="10sp"
+				android:layout_marginRight="10sp"
+				android:background="@drawable/smiley_button_states"
+				android:scaleType="center"
+				android:padding="5dip" >
+			    
+			</ImageButton>
+			
+			<TextView
+				android:id="@+id/Score"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FFFFFF"
+				android:textSize="40sp"
+				android:text="000" />
+			
+			<ImageView
+			    android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:layout_marginLeft="20sp"
+				android:layout_marginRight="5sp"
+				android:background="@drawable/ic_action"
+			    />
+			
+				<TextView
+				android:id="@+id/LivesCount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#FFFFFF"
+				android:textSize="40sp"
+				android:text="1" />
+	    
+    </LinearLayout>
+    
+    <TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+		
+	    <TableRow
+	        android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<TableLayout 
+	    		android:id="@+id/MineField"
+	    		android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:padding="5dip" >
+			</TableLayout>
+			
+	    </TableRow>
+    
+	</TableLayout>
+	
+</LinearLayout>
